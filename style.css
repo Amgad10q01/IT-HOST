@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+/* CSS FOR BODY */
+body{
+    margin: 0px;
+}
+/* css for box1 */
+.box{
+    width: 100%;
+    height: auto;
+    background: url(./img/bg.jpg.webp) center/cover no-repeat;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+/* css for nav */
+.box .nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.box .nav .logo{
+    width: 20%;
+    text-align: center;
+}
+.box .nav .menu{
+    width: 80%;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+.box .nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 0px 20px;
+    font-size: 18px;
+}
+.box .nav ul li:last-child{
+    background-color: #eb2b63;
+    border: 1px solid #eb2b63;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+.box .nav a{
+    text-decoration: none;
+    color: #fff;
+}
+/* css for text */
+.box1{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+.box1 .text{
+    width: 50%;
+    text-align: left;
+    padding-left: 100px;
+    color: #fff;
+}
+.box1 .text h2{
+    font: 60px bold;
+    width: 100px;
+    font-family: 'Anton', sans-serif;
+}
+.box1 .text p{
+    color: #fffa;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+    width: 450px;
+}
+.box1 .text button{
+    background-color: #eb2b63;
+    border: 1px solid #eb2b63;
+    border-radius: 4px;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    color: #fff
+}
+.box1 .text .rocket img{
+    width: 40%;
+    text-align: center;
+    max-width: 100%;
+}
+/* animation for box */
+.box .nav .menu ul li:hover a{
+    color:#eb2b63;
+}
+.box .nav .menu ul li:last-child:hover a{
+    color: #fff;
+}
+.box1 .text button:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.box1 .rocket img{
+    animation: pass 8s ease-in-out infinite alternate;
+}
+@keyframes pass{
+    0%{
+        transform: translateY(-100px);
+    }
+    25%{
+        transform: translateX(-100px);
+    }
+    50%{
+        transform: translate(-100px , 100px);
+    }
+    75%{
+        transform: translateY(100px , 100px);
+    }
+    100%{
+        transform: translateY(25px);
+    }
+}
+/* end of css for box */
+/* css for first */
+.section .first{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.section .first img{
+    display: block;
+    margin: 5px auto;
+}
+.section .first span{
+    text-transform: uppercase;
+    color: #777;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+.section .first h2{
+    text-transform: capitalize;
+    font: 50px bold;
+    margin-top: -4px;
+    font-family: 'Dancing Script', cursive;
+}
+/* css for second */
+.section .second #box{
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+}
+.section .second #box h3{
+    font-family: 'Abril Fatface', serif;
+    font-size: 40px;
+    margin: 2px auto;
+}
+.section .second #box p{
+    font-family: 'Philosopher', sans-serif;
+}
+.section .second #box .icon{
+    width: 70px;
+    height: 70px;
+    background-color: #eb2b63;
+    border: 1px solid #eb2b63;
+    border-radius: 50%;
+    margin: auto;
+    color: #fff;
+}
+.section .second #box .icon i{
+    font-size: 40px;
+    line-height: 70px;
+}
+.section .second #box:nth-child(2) .icon{
+    width: 100px;
+    height: 100px;
+}
+.section .second #box:nth-child(2) .icon i{
+    line-height: 100px;
+}
+/* end of css for section */
+/* animation for Section */
+.section .second #box:hover{
+    background-color: #eb2b63;
+    color: #fff;
+    border-radius: 20px;
+}
+.section .second #box:hover .icon{
+    background-color: #fff;
+    color: #eb2b63;
+}
+/* css for slider */
+.slider{
+    display: flex;
+    margin-top: 40px;
+}
+.slider .progress, 
+.slider .slider-right{
+    width: 50%;
+    padding-left: 50px;
+}
+.slider .progress .skills{
+    margin: 20px 0px;
+}
+.slider .progress .skills .skills-item{
+    display: flex;
+    justify-content: space-between;
+}
+.slider .progress .skills:first-child .skills-item span:last-of-type{
+    margin-right: 110px;
+}
+.slider .progress .skills:nth-child(2) .skills-item span:last-of-type{
+    margin-right: 60px;
+}
+.slider .progress .skills:nth-child(3) .skills-item span:last-of-type{
+    margin-right: 0px;
+}
+.slider .progress .skills:nth-child(4) .skills-item span:last-of-type{
+    margin-right: 190px;
+}
+.slider .progress .skills:nth-child(5) .skills-item span:last-of-type{
+    margin-right: 330px;
+}
+.slider .progress .skills .bar{
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-top: 15px;
+    position: relative;
+}
+.slider .progress .skills .bar::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+.slider .progress .skills:first-child .bar::after{
+    background-color: #eb2b63;
+    border: 1px solid #eb2b63;
+    width: 80%;
+}
+.slider .progress .skills:nth-child(2) .bar::after{
+    background-color: #0f8099;
+    border: 1px solid #0f8099;
+    width: 90%;
+}
+.slider .progress .skills:nth-child(3) .bar::after{
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    width: 100%;
+}
+.slider .progress .skills:nth-child(4) .bar::after{
+    background-color: #000000;
+    border: 1px solid #000000;
+    width: 70%;
+}
+.slider .progress .skills:nth-child(5) .bar::after{
+    background-color: #0008ff;
+    border: 1px solid #0008ff;
+    width: 50%;
+}
+/* css for slider-right */
+.slider .slider-right .slider-text{
+    background-color: #eef6f9;
+    border: 1px solid #eef6f9;
+    height: auto;
+    padding: 15px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.slider .slider-right .slider-text p{
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+}
+ .slider .slider-right .slider-text::before{
+    position: absolute;
+    content: "";
+    background-color: #eef6f9;
+    width: 20px;
+    height: 20px;
+    right: 7%;
+    bottom: -5%;
+    transform: rotate(45deg);
+}
+/* css & animation for slider bar for slider text */
+.slider .slider-right .slider-text:after{
+    position: absolute;
+    content: "";
+    background-color: #eb2b63;
+    width: 0px;
+    height: 5px;
+    top: -3%;
+    left: 0;
+}
+.slider .slider-right .slider-text:hover::after{
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+/* css for footer */
+.footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background: url(./img/bg-footer.webp) center/cover no-repeat;
+    box-sizing: border-box;
+}
+.footer li{
+    list-style-type: none;
+    margin: 3px 0px;
+}
+/* css for comment */
+.footer .comment{
+    width: 30%;
+    display: block;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.footer .comment h2{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 2px solid #eb2b63;
+    padding-bottom: 5px;
+    display: inline;
+    letter-spacing: 1px;
+}
+.footer .comment .data{
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+.footer .comment .data li{
+    display: inline;
+}
+.footer .comment .data input{
+    display: inline;
+    background: #1c1f2f;
+    overflow: hidden;
+    border: 1px solid #2e344d;
+    background-color: #1c1f2f;
+    box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    color: #fff;
+}
+.footer .comment .data textarea{
+    width: 168px;
+    background: #1c1f2f;
+    overflow: hidden;
+    border: 1px solid #2e344d;
+    background-color: #1c1f2f;
+    box-shadow: 10px 10px 36px rgb(0,0,0,0.5), -13px -13px 23px rgba(255,255,255, 0.03);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    color: #fff;
+}
+.footer .comment button{
+    background-color: #eb2b63;
+    border: 1px solid #eb2b63;
+    border-radius: 4px;
+    text-transform: uppercase;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    position: absolute;
+    bottom: 23px;
+    left: 180px;
+}
+/* css for contact us*/
+.footer .contact_Us{
+    position: relative;
+    width: 30%;
+}
+.footer .contact_Us h2{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eb2b63;
+    letter-spacing: 1px;
+    width: 120px;
+    position: absolute;
+    bottom: 70px;
+    left: 15px;
+}
+.footer .contact{
+    display: flex;
+    margin: 0px 10px;
+    padding-left: 0px;
+    position: absolute;
+    bottom: 20px;
+}
+.footer .contact li{
+    width: 50px;
+    height: 50px;
+    background-color: #eb2b63;
+    border: 1px solid #eb2b63;
+    border-radius: 50%;
+    margin: auto 5px;
+    color: #fff;
+    text-align: center;
+}
+.footer .contact li i{
+    font-size: 35px;
+    line-height: 50px;
+
+}
+.footer .contact_Us img{
+    max-width: 100%;
+    display: block;
+    margin: 20px 0px 10px;
+}
+.footer .contact_Us p{
+    color: #ddd;
+    height: auto;
+    margin: 15px;
+    border-radius: 20px;
+    font-family: 'Lobster', sans-serif;
+}
+/* css for tags */
+.footer .tags{
+    position: relative;
+    width: 40%;
+    margin-top: 20px;
+}
+.footer .tags h2{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+    border-bottom: 2px solid #eb2b63;
+    padding-bottom: 5px;
+    display: inline;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 130px;
+    margin: 0px auto;
+}
+.footer .tags .tags_widget{
+    padding-left: 0px;
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    top: 40px; 
+}
+.footer .tags .tags_widget li{
+    display: inline-block;
+    list-style-type: none;
+}
+.footer .tags .tags_widget li a{
+    border: 1px solid #eb2b63;
+    border-radius: 6px;
+    color: #fffa;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 4px;
+    padding: 7px 12px;
+}
+/* end of css for footer */
+/* animation for footer */
+.footer .comment button:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    line-height: 40px;
+}
+.footer .contact li:hover{
+    background-color: #fff;
+    transition: .3s ease-in-out;
+}
+.footer .contact li:hover i{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    color: #eb2b63;
+}
+.footer .tags .tags_widget li:hover a{
+    background-color: #eb2b63;
+    color: #fff;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    margin: 0px 4px;
+}
